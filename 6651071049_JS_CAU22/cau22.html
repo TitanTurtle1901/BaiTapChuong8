@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Câu 22</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; padding: 0 12px; }
+  h2 { color: #c55a11; }
+  input, select { padding: 3px; }
+  button { padding: 4px 12px; cursor: pointer; }
+  form { display: inline-block; border: 1px solid #999; padding: 10px 14px; }
+  .dong { margin-bottom: 6px; }
+  .dong label { display: inline-block; width: 100px; }
+  #kq { margin-top: 12px; }
+</style>
+</head>
+<body>
+<h2>Câu 22. Form nhân / chia hai số</h2>
+<form onsubmit="return false;">
+  <div class="dong"><label for="so1">1st Number :</label><input type="text" id="so1" value="12"></div>
+  <div class="dong"><label for="so2">2nd Number:</label><input type="text" id="so2" value="10"></div>
+  <button type="button" onclick="nhan()">Multiply</button>
+  <button type="button" onclick="chia()">Divide</button>
+  <div id="kq">The Result Is :<br><b id="ketqua"></b></div>
+</form>
+<script src="cau22.js"></script>
+</body>
+</html>

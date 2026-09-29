@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Câu 26</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; padding: 0 12px; }
+  h2 { color: #c55a11; }
+  input, select { padding: 3px; }
+  button { padding: 4px 12px; cursor: pointer; }
+  .khung { border: 1px solid #66cccc; width: 520px; }
+  .tieude { background: #ffffcc; text-align: center; font-weight: bold; font-size: 20px; padding: 4px; }
+  .noidung { background: #ccffff; padding: 8px; display: flex; align-items: flex-end; justify-content: space-between; }
+  input[type=text] { width: 170px; }
+  #loi { color: red; margin-top: 6px; }
+</style>
+</head>
+<body>
+<h2>Câu 26. Tính can chi của năm âm lịch</h2>
+<div class="khung">
+  <div class="tieude">TÍNH CAN CHI CỦA NĂM ÂM LỊCH</div>
+  <div class="noidung">
+    <div>Năm dương lịch<br><input type="text" id="namDuong" value="2015"></div>
+    <div><button type="button" onclick="tinhCanChi()">---&gt;</button></div>
+    <div>Can chi năm âm lịch<br><input type="text" id="canChi" readonly></div>
+  </div>
+</div>
+<div id="loi"></div>
+<script src="cau26.js"></script>
+</body>
+</html>

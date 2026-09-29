@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Câu 25</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; padding: 0 12px; }
+  h2 { color: #c55a11; }
+  input, select { padding: 3px; }
+  button { padding: 4px 12px; cursor: pointer; }
+  #thucdon { background: #ccff00; border: 2px solid #99cc00; border-collapse: collapse; margin: auto; }
+  #thucdon td, #thucdon th { padding: 4px 8px; border: 1px solid #99cc00; }
+  h3 { text-align: center; margin: 4px; }
+  th.xanh { color: #0000ff; }
+  select[multiple] { width: 130px; height: 130px; }
+  .giua { text-align: center; }
+  #hoadon { background: #aaffff; border-collapse: collapse; width: 100%; border: 2px solid #800000; }
+  #hoadon td, #hoadon th { border: 1px solid #800000; padding: 2px 6px; }
+  #hoadon th { color: #0000ff; }
+  .phai { text-align: right; }
+</style>
+</head>
+<body>
+<h2>Câu 25. Tính tiền các món ăn</h2>
+<form onsubmit="return false;">
+<table id="thucdon">
+  <tr><td colspan="3"><h3>THỰC ĐƠN</h3></td></tr>
+  <tr><th class="xanh">Thức ăn</th><th class="xanh">Nước uống</th><th class="xanh">Thời điểm</th></tr>
+  <tr>
+    <td>
+      <select id="thucan" multiple>
+        <option value="20000">Bún bò</option>
+        <option value="18000">Hủ tiếu</option>
+        <option value="17000">Bánh canh</option>
+        <option value="19000">Phở bò</option>
+        <option value="15000">Nuôi</option>
+        <option value="12000">Bánh mì thịt</option>
+        <option value="15000">Bánh cuốn</option>
+      </select>
+    </td>
+    <td>
+      <select id="nuocuong" multiple>
+        <option value="12000">Cà phê đá</option>
+        <option value="15000">Cà phê sữa</option>
+        <option value="13000">Chanh dây</option>
+        <option value="12000">Chanh muối</option>
+        <option value="14000">Xí muội</option>
+        <option value="13000">Sữa tươi</option>
+        <option value="17000">Cam vắt</option>
+      </select>
+    </td>
+    <td>
+      <label><input type="radio" name="thoidiem" value="ngay" checked> Ban ngày</label><br><br>
+      <label><input type="radio" name="thoidiem" value="dem"> Ban đêm</label>
+    </td>
+  </tr>
+  <tr><td colspan="3" class="giua"><button type="button" onclick="tinhTien()">Tính tiền</button></td></tr>
+  <tr><td colspan="3"><div id="kq"></div></td></tr>
+</table>
+</form>
+<script src="cau25.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Câu 23</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; padding: 0 12px; }
+  h2 { color: #c55a11; }
+  input, select { padding: 3px; }
+  button { padding: 4px 12px; cursor: pointer; }
+  table { border: 3px solid #000080; border-collapse: collapse; background: #ffcc99; }
+  td { border: 1px solid #000; padding: 3px 6px; }
+  td.nhan { font-weight: bold; width: 130px; }
+  .giua { text-align: center; }
+  #luongThang { font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>Câu 23. Tính tiền lương tháng</h2>
+<form onsubmit="return false;">
+<table>
+  <tr>
+    <td class="nhan">Lương</td>
+    <td><input type="text" id="luong" value="1000000" size="30"></td>
+  </tr>
+  <tr>
+    <td class="nhan">Hệ số lương</td>
+    <td>
+      <select id="heso">
+        <option value="1.0">1.0</option>
+        <option value="1.5">1.5</option>
+        <option value="2.0">2.0</option>
+        <option value="2.5">2.5</option>
+        <option value="3.0">3.0</option>
+        <option value="3.2" selected>3.2</option>
+        <option value="3.5">3.5</option>
+        <option value="4.0">4.0</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="giua"><button type="button" onclick="tinhLuong()">Tính lương tháng</button></td>
+  </tr>
+  <tr>
+    <td class="nhan">Lương tháng</td>
+    <td id="luongThang"></td>
+  </tr>
+</table>
+</form>
+<script src="cau23.js"></script>
+</body>
+</html>

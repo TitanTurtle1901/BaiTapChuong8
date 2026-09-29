@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Câu 24</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; padding: 0 12px; }
+  h2 { color: #c55a11; }
+  input, select { padding: 3px; }
+  button { padding: 4px 12px; cursor: pointer; }
+  table { border: 3px solid #000080; border-collapse: collapse; background: #ffcccc; width: 100%; }
+  td { border: 2px solid #000080; padding: 4px 8px; }
+  .giua { text-align: center; }
+  #kq { font-size: 20px; }
+</style>
+</head>
+<body>
+<h2>Câu 24. Xuất thứ trong tuần khi biết ngày, tháng, năm</h2>
+<form onsubmit="return false;">
+<table>
+  <tr>
+    <td>Ngày <input type="text" id="ngay" value="12" size="8">
+        &nbsp;&nbsp;Tháng Select:
+        <select id="thang"></select>
+        năm <input type="text" id="nam" value="2015" size="8"></td>
+  </tr>
+  <tr><td class="giua"><button type="button" onclick="xuatThu()">Xuất thứ</button></td></tr>
+  <tr><td class="giua" id="kq">&nbsp;</td></tr>
+</table>
+</form>
+<script src="cau24.js"></script>
+</body>
+</html>
